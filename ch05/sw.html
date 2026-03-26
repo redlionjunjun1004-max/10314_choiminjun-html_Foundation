@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홀짝 계산기!</title>
+</head>
+<body>
+    <input id="input" type="text" />
+    <button id="btn" type="button">확인</button>
+    <div id="print"></div>
+</body>
+</html>
+<script>
+    document.getElementById("btn").onclick = function ( ){
+        let char = document.getElementById("input").value;
+        let result = null;
+        switch (char) {
+            case "y":
+                result = "compan"
+                break;
+            case "n":
+                result = "no compan"
+                break;
+            default:
+                result = "different char"
+                break;
+
+        }
+        document.getElementById("print").textContent = result;
+    }        
+</script>
