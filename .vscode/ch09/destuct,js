@@ -1,0 +1,27 @@
+const color = ["R","G","B"]
+const langs = ["c#", "Js", "java", "php","rust", "c++", "korlin"];
+let [r,g,b] = color;
+[b,g,r] = [r,g,b];
+let [first , second , third = "c#"] = langs;
+let[csharp, , java , php] = langs;
+console.log(php)
+let asdf =10;
+let zxcv = 15;
+[asdf, zxcv] = [zxcv, asdf];
+[first, second, third = "C" , ...rest] = langs;
+console.log(rest)
+const arr1 = [1,2]
+const arr2 = [3,4]
+const arr3 = [...arr1, ...arr2];
+console.log(arr3);
+const user = {
+    id:"pink_light_star",
+    pw:"redlionju4695",
+    name:"최민준",
+    age:27,
+
+}
+//let{id,pw,name,age=20} = user;
+console.log(id)
+let{id, ...others}= user;
+console.log(others);

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">버튼</button>
+</body>
+<script>
+    const fristclick = function () {
+        alert("frist");
+    };
+    const secondclick = function () {
+        alert("second");
+    };
+    document.getElementById("btn").addEventListener("click",fristclick);
+    document.getElementById("btn").addEventListener("click",secondclick);
+</script>
+</html> 
